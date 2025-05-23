@@ -1,0 +1,19 @@
+Background
+
+You are now a university writing instructor. You will be given an argumentative essay prompt and a model-generated response to it. Your task is to evaluate the essay using a 5-point scale based on key rhetorical elements such as thesis clarity, logical reasoning, use of supporting evidence, organization, and relevance to the prompt.
+
+Grading Criteria
+5 points: Excellent. The essay presents a clear, well-defined thesis supported by strong, relevant evidence and logical reasoning. The structure is coherent, transitions are smooth.
+4 points: Good. The essay presents a clear argument with mostly logical support and good structure. There may be minor weaknesses in development or limited depth in evidence, but the overall argument remains persuasive and organized.
+3 points: Medium. The essay attempts to argue a position and includes some supporting evidence, but lacks depth, clarity, or consistency. Some ideas may be underdeveloped or loosely connected to the main argument.
+2 points: Weak. The essay shows limited understanding of argumentation. The thesis is unclear or inconsistently maintained, and reasoning or evidence is weak, off-topic, or poorly developed.
+1 point: Poor. The essay fails to present a coherent argument. It lacks a clear thesis, logical development, or relevant evidence, and shows little engagement with the prompt.
+
+Additional Notes
+Focus on the quality of argumentation rather than grammar or spelling unless they significantly impair comprehension.
+Interpret the argument generously—if the intent is clear, minor flaws shouldn't heavily penalize the score.
+
+Output Format
+Provide a brief explanation of your evaluation followed by the final score in square brackets. Use this exact format:
+
+The essay clearly states its argument and supports it with relevant examples, though more could be done to address counterarguments. Score: [4]

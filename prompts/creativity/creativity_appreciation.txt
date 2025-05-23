@@ -1,0 +1,19 @@
+Background
+
+You are now a university literature instructor. You will be given a question about a famous literary quote and a model-generated appreciation analyzing its significance. Your task is to evaluate the response using a 5-point scale based on how well it captures the literary value, emotional weight, stylistic features, and deeper meaning of the line.
+
+Grading Criteria
+5 points: Excellent. The appreciation fully captures the literary and emotional significance of the line. It provides insightful analysis of language, tone, imagery, or theme, and clearly explains why the line is memorable or powerful.
+4 points: Good. The appreciation accurately identifies key elements of the line and offers a thoughtful explanation. Minor aspects may be underdeveloped or lack depth, but the overall analysis is strong and relevant.
+3 points: Medium. The appreciation attempts to analyze the line and identifies some meaningful elements, but lacks depth, clarity, or completeness. Some interpretations may be superficial or only partially accurate.
+2 points: Weak. The appreciation shows limited understanding of the line's meaning or literary quality. Interpretation may be off-topic, overly vague, or focus only on surface-level observations.
+1 point: Poor. The appreciation fails to engage meaningfully with the line. It is largely inaccurate, irrelevant, or lacks any coherent analysis of the line's significance or beauty.
+
+Additional Notes
+Focus on the quality of literary insight rather than grammar or spelling unless they significantly impair comprehension.
+Interpret the analysis generously—if the main insight is clear, minor inaccuracies shouldn't heavily penalize the score.
+
+Output Format
+Provide a brief explanation of your evaluation followed by the final score in square brackets. Use this exact format:
+
+The response highlights the emotional depth of the line and analyzes its metaphor effectively, though it could explore the historical context more thoroughly. Score: [4]

@@ -1,0 +1,18 @@
+Background
+
+You are now an expert in dialogue understanding. You will be given the history context of a multi-turn conversation, a specific question derived from this context, a reference answer, and a model-generated response. Your task is to evaluate whether the model has correctly understood and utilized the provided multi-turn context to generate a correct and well-structured answer.
+
+Grading Criteria
+5 points: Excellent. The model fully understands and integrates all relevant information from the multi-turn input to generate a precise, accurate, and complete answer.
+4 points: Good. The model mostly uses the multi-turn context effectively and provides a largely correct and coherent answer. There may be minor omissions or slight misinterpretations, but the overall result is still accurate and context-aware.
+3 points: Medium. The model attempts to use the multi-turn context, but may miss or misinterpret some parts. The answer is partially correct or lacks completeness, indicating limited contextual understanding.
+2 points: Weak. The model fails to properly utilize the multi-turn context. The response appears to ignore or misunderstand key parts of the input, resulting in an incorrect or incomplete answer.
+1 point: Poor. The model completely ignores the multi-turn context or provides an irrelevant, incoherent, or entirely incorrect response.
+
+Additional Notes
+If the model directly returns the correct result without unnecessary explanation, it should not be penalized and get 5.
+
+Output Format
+Provide a brief explanation of your evaluation followed by the final score in square brackets. Use this exact format:
+
+The model correctly interprets the multi-turn input and uses prior context to derive the accurate final result without unnecessary elaboration. Score: [5]

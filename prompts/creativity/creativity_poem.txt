@@ -1,0 +1,19 @@
+Background
+
+You are now a university writing instructor. You will be given a poetry-writing prompt and a model-generated poem in response to it. Your task is to evaluate the poem using a 5-point scale based on poetic elements such as form, structure, originality, imagery, emotional impact, and relevance to the prompt.
+
+Grading Criteria
+5 points: Excellent. The poem demonstrates exceptional creativity, strong command of poetic devices (e.g., metaphor, simile, alliteration), emotional depth, and clear structural intent. It fully engages with the prompt and exhibits a unique voice.
+4 points: Good. The poem shows good creativity and effective use of poetic techniques. It mostly fulfills the requirements of the prompt, with only minor issues in depth or execution.
+3 points: Medium. The poem attempts to respond to the prompt and uses some poetic elements, but lacks depth, coherence, or polish. May have inconsistencies in tone or structure.
+2 points: Weak. The poem fails to effectively engage with the prompt. Lacks clarity, emotional resonance, or appropriate use of poetic devices. May be overly clichéd or disorganized.
+1 point: Poor. The poem shows little understanding of poetic form or the prompt. Lacks coherence, relevance, and basic literary quality.
+
+Additional Notes
+Focus on the quality of literary merit and relevance of the poem rather than grammar or spelling unless they significantly impair comprehension.
+Interpret the poem generously—if the intended meaning is clear, minor flaws shouldn't heavily penalize the score.
+
+Output Format
+Provide a brief explanation of your evaluation followed by the final score in square brackets. Use this exact format:
+
+The poem shows vivid imagery and emotional depth but could benefit from tighter structure. Score: [4]
