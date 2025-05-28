@@ -35,7 +35,7 @@ def read_prompt(eval_set):
 
 def read_prompt_subcategory(eval_set, category):
     cate_name = category.lower().replace(' ','_')
-    filepath = os.path.join("prompts", f"{eval_set}/{cate_name}.txt") 
+    filepath = os.path.join("../prompts", f"{eval_set}/{cate_name}.txt") 
     with open(filepath, 'r') as file:
         return file.read()
 
