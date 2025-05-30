@@ -62,7 +62,7 @@ def count_words(text):
 
 def gen_score(eval_json, only_score):
     wav_dir = eval_json.replace('result/instruction.json', 'wav/instruction')
-    query_dir = '../audio/instruction_following'
+    query_dir = '../audio/instruction'
     model_id = "../tools/emotion2vec_plus_large"
     emotion_model = AutoModel(
           model=model_id,
