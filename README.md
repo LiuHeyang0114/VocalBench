@@ -458,6 +458,22 @@ cd utils
         <td>63.886</td>
       </tr>
       <tr>
+        <td>VITA-Audio-Plus-Vanilla</td>
+        <td>52.00</td>
+        <td>4.183</td>
+        <td>3.2800</td>
+        <td>4.173</td>
+        <td>4.858</td>
+        <td>3.520</td>
+        <td>-</td>
+        <td>33.59</td>
+        <td>6.843</td>
+        <td>88.25</td>
+        <td>0.4645</td>
+        <td>89.53</td>
+        <td>71.795</td>
+      </tr>
+      <tr>
         <td>Qwen2.5-Omni</td>
         <td>69.50</td>
         <td><b>4.361<br></td>
