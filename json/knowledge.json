@@ -8769,8 +8769,8 @@
         "Set": "Knowledge",
         "Qid": "knowledge-0974",
         "Audio": "knowledge/0974.wav",
-        "Question": "What is the capital of Taiwan?",
-        "Answer": "Taipei",
+        "Question": "Papua is a province of which country?",
+        "Answer": "Indonesia",
         "Topic": "Geography",
         "Source": "triviaqa-dev"
     },
