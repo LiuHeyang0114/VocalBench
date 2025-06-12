@@ -17623,6 +17623,15 @@
     },
     {
         "Set": "Knowledge",
+        "Qid": "knowledge-1958",
+        "Audio": "knowledge/1958.wav",
+        "Question": "What is the second largest day for US food consumption, after Thanksgiving Day?",
+        "Answer": "Colombia",
+        "Topic": "Society",
+        "Source": "triviaqa-dev"
+    },
+    {
+        "Set": "Knowledge",
         "Qid": "knowledge-1959",
         "Audio": "knowledge/1959.wav",
         "Question": "Josiah Bartlet was a central character in which US TV drama series?",
