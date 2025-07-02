@@ -505,6 +505,44 @@ cd utils
         <td>92.66</td>
         <td><b>74.639<br></td>
       </tr>
+      <tr>
+        <td colspan="14">Real Time API</td>
+      </tr>
+      <tr>
+        <td>Qwen-Omni-Turbo</td>
+        <td>64.95</td>
+        <td>4.058</td>
+        <td>3.1575</td>
+        <td>4.405</td>
+        <td>1.656</td>
+        <td>3.420</td>
+        <td>3.9775</td>
+        <td>22.11</td>
+        <td>6.226</td>
+        <td>65.25</td>
+        <td>-</td>
+        <td>90.64</td>
+        <td>70.729</td>
+      </tr>  
+      <tr>
+        <td colspan="14">Cascade System</td>
+      </tr>
+      <tr>
+        <td>Whisper+GPT-4o+CosyVoice</td>
+        <td><b>86.20<br></td>
+        <td>4.138</td>
+        <td><b>3.7500<br></td>
+        <td><b>4.474<br></td>
+        <td>4.955</td>
+        <td>3.625</td>
+        <td><b>4.2050<br></td>
+        <td><b>66.33<br></td>
+        <td>6.769</td>
+        <td>91.50</td>
+        <td>-</td>
+        <td>90.79</td>
+        <td><b>80.291<br></td>
+      </tr>  
     <thead>
       <tr>
          <th class="tg-c3ow" colspan="14"></th>
