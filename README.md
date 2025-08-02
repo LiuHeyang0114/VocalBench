@@ -3,204 +3,24 @@
 
 # **📈VocalBench: Benchmarking the Vocal Conversational Abilities for Speech Interaction Models**
 <!-- # 🎧VocalNet: Speech LLM with Multi-Token Prediction for Faster and High-Quality Generation -->
-<!-- <strong>English | 
-[Chinese](./README_zh.md)</strong> -->
+
 
 </div>
-
-<p align="center">
-HuggingFace <a href="https://huggingface.co/datasets/VocalNet/VocalBench">🤗</a> | ModelScope <a href="https://modelscope.cn/datasets/VocalNet/VocalBench">🔮</a>  | Paper <a href="">📖</a> 
-</p>
-<p align="center">
-Shanghai Jiao Tong University</a>  |  Ant Group</a> 
-</p>
-
-<div align="center"><img src="images/VocalBench.png" width="25%"/></div>
 
 ## 👀 VocalBench Overview
 
 **VocalBench** is a comprehensive evaluation benchmark to assess the vocal communication ability for speech interaction models.  
 
-- **Semantic**: Abilities to generate accurate and vivid semantics, including knowledge, reasoning and creativity sets.
-- **Acoustic**: Speech response with spontaneous and natural acoustics, evaluated on the single-round set in chat dimension.
-- **Chat**: Performance on effienct and smooth chat, consisting of single- and multi-round, instruction following, emotion-aware, safety alignment sets, and a real-time factor calculation representing the computing latency.
-- **Robustness**: Robustness under diverse acoustic environments, performing on white noise, background noise, reverberation, far-field, packet loss, and clipping distortion.
-
-<div align="center">
-  <table style="margin: 0 auto; text-align: center;">
-    <thead>
-      <tr>
-         <th class="tg-c3ow" colspan="9"></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Dimension</td>
-        <td>Ability</td>
-        <td>Category</td>
-        <td>Instances</td>
-        <td>Annotations</td>
-        <td>Source</td>
-        <td>Evaluation Method / Indicator</td>
-      </tr>
-      <tr>
-        <td rowspan="3">Semantic</td>
-        <td>Knowlegde</td>
-        <td>13</td>
-        <td>2000</td>
-        <td>Topic</td>
-        <td>LLaMA-Q, Web-Q, TriviaQA, SciQ</td>
-        <td>Rule-based / Accuracy</td>
-      </tr>
-      <tr>
-        <td>Reasoning</td>
-        <td>8</td>
-        <td>1000</td>
-        <td>Category</td>
-        <td>CommonsenseQA, gsm8k, STORAL, LLM-generated, self-made</td>
-        <td>LLM-Eval / Score</td>
-      </tr>
-      <tr>
-        <td>Creativity</td>
-        <td>6</td>
-        <td>400</td>
-        <td>Category</td>
-        <td>Web, LLM-generated, self-made </td>
-        <td>LLM Eval / Score</td>
-      </tr>
-      <tr>
-      <td rowspan="2">Acoustic</td>
-        <td>Fluency</td>
-        <td> - </td>
-        <td> - </td>
-        <td> - </td>
-        <td> Single-round set </td>
-        <td> UTMOS </td>
-      </tr>
-      <tr>
-        <td>Clarity</td>
-        <td> - </td>
-        <td> - </td>
-        <td> - </td>
-        <td> Single-round set </td>
-        <td> WER </td>
-      </tr>
-      <tr>
-        <td rowspan="6">Chat</td>
-        <td>Single-Round</td>
-        <td>2</td>
-        <td>200</td>
-        <td>Category</td>
-        <td>AlpacaEval, LLM-generated, self-made</td>
-        <td>LLM Eval / Score</td>
-      </tr>
-      <tr>
-        <td>Multi-round</td>
-        <td>13</td>
-        <td>400</td>
-        <td>Category</td>
-        <td>mt-bench-101</td>
-        <td>LLM Eval / Score</td>
-      </tr>
-      <tr>
-        <td>Instruction Following</td>
-        <td>16</td>
-        <td>900</td>
-        <td>Category, Sub-category</td>
-        <td>FollowBench, InfoBench, etc.; LLM-generated, self-made</td>
-        <td>LLM Eval / Following Rate</td>
-      </tr>
-      <tr>
-        <td>Emotion Aware</td>
-        <td>5</td>
-        <td>500</td>
-        <td>Question Emo etc.</td>
-        <td>LLM-generated, self-made</td>
-        <td>Semantic + Acoustic Score</td>
-      </tr>
-      <tr>
-        <td>Safety Alignment</td>
-        <td>1</td>
-        <td>400</td>
-        <td>Category</td>
-        <td>SafetyTrainig (test)</td>
-        <td>LLM Eval / Refusal Rate</td>
-      </tr>
-      <tr>
-        <td>Latency</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>Single-round set</td>
-        <td>RTF</td>
-      </tr>
-      <tr>
-        <td rowspan="5">Robustness</td>
-        <td>Noise</td>
-        <td>2</td>
-        <td>1200</td>
-        <td>Category, Severeness</td>
-        <td>Single-round set</td>
-        <td>LLM Eval / Score, Preserve Rate</td>
-      </tr>
-      <tr>
-        <td>Reverberation</td>
-        <td>1</td>
-        <td>600</td>
-        <td>Category, Severeness</td>
-        <td>Single-round set</td>
-        <td>LLM Eval / Score, Preserve Rate</td>
-      </tr>
-      <tr>
-        <td>Far-field</td>
-        <td>1</td>
-        <td>800</td>
-        <td>Category, Severeness</td>
-        <td>Single-round set</td>
-        <td>LLM Eval / Score, Preserve Rate</td>
-      </tr>
-      <tr>
-        <td>Packet Loss</td>
-        <td>1</td>
-        <td>500</td>
-        <td>Category, Severeness</td>
-        <td>Single-round set</td>
-        <td>LLM Eval / Score, Preserve Rate</td>
-      </tr>
-      <tr>
-        <td>Clipping Distortion</td>
-        <td>1</td>
-        <td>500</td>
-        <td>Category, Severeness</td>
-        <td>Single-round set</td>
-        <td>LLM Eval / Score, Preserve Rate</td>
-      </tr>
-      <tr>
-        <td><b>Total<br></td>
-        <td>-</td>
-        <td>-</td>
-        <td><b>9400<br></td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-    <thead>
-      <tr>
-         <th class="tg-c3ow" colspan="11"></th>
-      </tr>
-    </thead>
-    </tbody>
-  </table>
-</div>
-
-<br> 
-<br> 
+- **Semantic**: Abilities to generate accurate and vivid semantics, including knowledge, reasoning, and creativity sets.
+- **Acoustic**: Speech response with spontaneous and natural acoustics, evaluated on the single-round set in the chat dimension.
+- **Chat**: Performance on efficient and smooth chat, consisting of single- and multi-round, instruction following, emotional sympathy, safety alignment sets, and a real-time factor calculation representing the computing latency.
+- **Robust**: Robustness under diverse acoustic environments, performing on white noise, background noise, reverberation, far-field, packet loss, and clipping distortion.
 
 ## 🙌 Quick Start
 
-### Step 0: Model Preparartion
+### Step 0: Model Preparation
 
-- Environment Preparartion:
+- Environment Preparation:
 ```bash
 cd tools/emotion2vec_plus_large
 huggingface-cli download emotion2vec/emotion2vec_plus_large --local-dir .
@@ -215,9 +35,6 @@ ln -s fairseq ../../utils/utmos_utils
 cd ../..
 pip install -r requirements.txt
 ```
-
-- Query Audio Download from [HuggingFace](https://huggingface.co/datasets/VocalNet/VocalBench) or [ModelScope](https://modelscope.cn/datasets/VocalNet/VocalBench).
-
 
 ### Step 1: Speech Interaction Model Infer
 
@@ -238,13 +55,6 @@ cd utils
 cd utils
 ./gen_score.sh
 ```
-
-
-
-
-
-
-
 
 
 ## 🏆 Leaderboard
@@ -559,29 +369,11 @@ cd utils
 
 ## 🌞 Acknowledgements
 
-- [Whisper](https://huggingface.co/openai/whisper-large-v3): VocalBench uses Whisper for speech recognition.
-- [Emotion2vec](https://huggingface.co/emotion2vec/emotion2vec_plus_large): VocalBench uses emotion2vec_plus_large for emotion recognition.
-- [UTMOS](https://github.com/sarulab-speech/UTMOS22): VocalNet uses UTMOS to quantify the acoustic quality.
-- [Qwen2.5-Max](https://qwenlm.github.io/blog/qwen2.5-max/): VocalNet uses Qwen2.5-Max for LLM evaluation.
+- Whisper: VocalBench uses Whisper for speech recognition.
+- Emotion2vec: VocalBench uses emotion2vec_plus_large for emotion recognition.
+- UTMOS: VocalBench uses UTMOS to quantify the acoustic quality.
+- Qwen2.5-Max: VocalBench uses Qwen2.5-Max for LLM evaluation.
 
 <br> 
 <br> 
 
-## ⚖️ License
-
-This repository is released under the Apache-2.0 license as found in the [LICENSE](LICENSE) file.
-
-<br> 
-<br> 
-
-## 💡 Citation
-If you find our benchmark helpful, please consider citing our papers 📝 and staring us ⭐️！
-
-```bib
-@article{liu2025vocalbench,
-  title={VocalBench: Benchmarking the Vocal Conversational Abilities for Speech Interaction Models},
-  author={Liu, Heyang and Wang, Yuhao and Cheng, Ziyang and Wu, Ronghua and Gu, Qunshan and Wang, Yanfeng and Wang, Yu},
-  journal={arXiv preprint arXiv:2505.15727},
-  year={2025}
-}
-```
