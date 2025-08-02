@@ -89,7 +89,7 @@ class Qwen_Max(object):
                 txt_result = result["choices"][0]["message"]["content"]
                 return {"text": txt_result}
             else:
-                print(f"请求失败，状态码：{response.status_code}")
+                print(f"Failed, code: {response.status_code}")
                 print(response.text)
                 i += 1
         else:
